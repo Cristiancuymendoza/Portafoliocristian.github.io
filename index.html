@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Premium | Cristian</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Preloader: momento de entrada orquestado -->
+    <div id="preloader" aria-hidden="true">
+        <div class="preloader-logo"></div>
+    </div>
+
+    <!-- Capa de ambiente de larga duración (5 minutos) -->
+    <div class="ambiente-largo"></div>
+
+    <!-- Burbujas flotantes de fondo -->
+    <div class="burbujas-fondo" aria-hidden="true">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+    </div>
+
+    <!-- Cursor personalizado -->
+    <div id="cursor-custom" aria-hidden="true"></div>
+    <div id="cursor-follower" aria-hidden="true"></div>
+
+    <aside class="sidebar">
+        <div class="perfil-contenedor">
+            <div class="foto-perfil">CRISTIAN</div>
+            <div class="status-badge"></div>
+        </div>
+        <h1 class="nombre">Cristian</h1>
+        <h2 class="rol">Content Creator</h2>
+
+        <ul class="menu-principal">
+            <li><button class="nav-btn activo" data-target="personal"><i class="fa-solid fa-user"></i> Sobre mí</button></li>
+            <li><button class="nav-btn" data-target="juegos"><i class="fa-solid fa-gamepad"></i> Proyectos / Juegos</button></li>
+            <li><button class="nav-btn" data-target="redes"><i class="fa-solid fa-share-nodes"></i> Mis Redes</button></li>
+        </ul>
+    </aside>
+
+    <main class="contenido-area">
+
+        <section id="personal" class="pagina activa">
+            <h2 class="titulo-seccion"><i class="fa-solid fa-user-astronaut"></i> Sobre <span>mí persona</span></h2>
+
+            <div class="grid-tarjetas">
+                <div class="tarjeta">
+                    <div class="tarjeta-encabezado">
+                        <h3 class="tarjeta-titulo"><i class="fa-solid fa-address-card"></i> Biografía</h3>
+                        <span class="badge-destacado">Activo</span>
+                    </div>
+                    <p class="tarjeta-desc">
+                        ¡Hola! Soy Cristian, creador de contenido y jugador enfocado en el gameplay competitivo, estratégico y dinámico. Me apasiona construir comunidades y gestionar entornos gaming profesionales.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="tarjeta-encabezado">
+                        <h3 class="tarjeta-titulo"><i class="fa-solid fa-id-card"></i> Player Info</h3>
+                    </div>
+                    <ul class="info-lista">
+                        <li><i class="fa-solid fa-fingerprint" style="color: var(--acento);"></i> <strong>ID de Juego:</strong> 6813131203</li>
+                        <li><i class="fa-solid fa-crosshairs" style="color: #ff4444;"></i> <strong>Estilo:</strong> Competitivo / Agresivo</li>
+                        <li><i class="fa-solid fa-tv" style="color: #00ff88;"></i> <strong>Presencia:</strong> En Vivo en salas top</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta">
+                    <div class="tarjeta-encabezado">
+                        <h3 class="tarjeta-titulo"><i class="fa-solid fa-star"></i> Reconocido en</h3>
+                    </div>
+                    <p class="tarjeta-desc" style="margin-bottom: 10px;">Participante destacado en las transmisiones de:</p>
+                    <ul class="info-lista">
+                        <li><i class="fa-solid fa-circle-play"></i> <strong>El PC</strong></li>
+                        <li><i class="fa-solid fa-circle-play"></i> <strong>La Plaga44</strong></li>
+                        <li><i class="fa-solid fa-circle-play"></i> <strong>Temu</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="juegos" class="pagina">
+            <h2 class="titulo-seccion"><i class="fa-solid fa-cubes"></i> Mis <span>Proyectos y Juegos</span></h2>
+
+            <div class="filtros-container">
+                <button class="btn-filtro activo" data-filter="freefire"><i class="fa-solid fa-fire"></i> Free Fire</button>
+                <button class="btn-filtro" data-filter="minecraft"><i class="fa-solid fa-cube"></i> Minecraft</button>
+                <button class="btn-filtro" data-filter="desarrollo"><i class="fa-solid fa-code"></i> Desarrollo</button>
+                <button class="btn-filtro" data-filter="otros"><i class="fa-solid fa-wand-magic-sparkles"></i> Otros</button>
+            </div>
+
+            <div id="freefire" class="categoria-contenido activa">
+                <div class="grid-tarjetas">
+                    <div class="tarjeta">
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-solid fa-trophy"></i> Perfil Competitivo</h3>
+                            <span class="badge-destacado" style="color:#ff8800; border-color:#ff8800; background:rgba(255,136,0,0.1)">High Tier</span>
+                        </div>
+                        <p class="tarjeta-desc">Participación constante en torneos organizados, salas competitivas y un posicionamiento sólido en los rankings más altos de la temporada.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-solid fa-video"></i> Montajes Core</h3>
+                            <span class="badge-destacado" style="color:#ff4444; border-color:#ff4444; background:rgba(255,68,68,0.1)">Creador</span>
+                        </div>
+                        <p class="tarjeta-desc">Edición especializada de clips estilo "core" integrando efectos de sonido envolventes (como transiciones explosivas) para crear videos de alto impacto visual en redes sociales.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="minecraft" class="categoria-contenido">
+                <p class="tarjeta-desc mb-4" style="max-width:700px;">He sido parte del staff en distintos servidores de Minecraft a lo largo de los años, pasando por roles de Helper, Moderador, Administrador y Manager. A continuación, el detalle de cada servidor (actualmente inactivos):</p>
+
+                <div class="grid-tarjetas">
+
+                    <!-- MANAGER: tarjeta destacada, mejor posicionada y más ancha -->
+                    <div class="tarjeta tarjeta-manager" style="grid-column: span 2;">
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-solid fa-crown"></i> IcePvP Network</h3>
+                            <span class="badge-destacado badge-manager"><i class="fa-solid fa-star"></i> Manager</span>
+                        </div>
+                        <p class="tarjeta-desc" style="margin-bottom:12px;">
+                            <i class="fa-solid fa-fire" style="color:var(--freefire-orange);"></i> Box PvP &nbsp;·&nbsp;
+                            2021 - 2022 &nbsp;·&nbsp;
+                            <span class="texto-peligro">Servidor cerrado</span>
+                        </p>
+                        <ul class="info-lista">
+                            <li><i class="fa-solid fa-users-gear" style="color:var(--acento);"></i> Coordiné al equipo completo de staff (helpers, moderadores y admins), asignando turnos y evaluando su desempeño mensual.</li>
+                            <li><i class="fa-solid fa-calendar-check" style="color:var(--acento);"></i> Organicé torneos internos de Box PvP y eventos de temporada junto al equipo de contenido y streamers invitados.</li>
+                            <li><i class="fa-solid fa-scale-balanced" style="color:var(--acento);"></i> Tomé las decisiones finales sobre apelaciones de sanciones y ajustes de balance en kits y mapas.</li>
+                            <li><i class="fa-solid fa-bullhorn" style="color:var(--acento);"></i> Fui el enlace directo entre la comunidad y el dueño del servidor para reportar bugs, sugerencias y feedback de los jugadores.</li>
+                        </ul>
+                    </div>
+
+                    <!-- ADMIN -->
+                    <div class="tarjeta">
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-solid fa-user-shield"></i> Valhalla SMP</h3>
+                            <span class="badge-destacado" style="color:var(--peligro); border-color:var(--peligro); background:rgba(239,68,68,0.1)">Administrador</span>
+                        </div>
+                        <p class="tarjeta-desc" style="margin-bottom:12px;">Survival Normal &nbsp;·&nbsp; 2020 - 2021 &nbsp;·&nbsp; Servidor cerrado</p>
+                        <ul class="info-lista">
+                            <li><i class="fa-solid fa-hammer"></i> Gestioné el sistema de economía, tiendas y claims del survival junto al equipo técnico.</li>
+                            <li><i class="fa-solid fa-users"></i> Supervisé al equipo de moderadores y helpers, revisando sus reportes de forma semanal.</li>
+                            <li><i class="fa-solid fa-database"></i> Configuré backups, whitelist y reinicios programados para mantener la estabilidad del servidor.</li>
+                        </ul>
+                    </div>
+
+                    <!-- MODERADOR -->
+                    <div class="tarjeta">
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-solid fa-gavel"></i> ShockBox PvP</h3>
+                            <span class="badge-destacado" style="color:var(--comunidad); border-color:var(--comunidad); background:rgba(168,85,247,0.1)">Moderador</span>
+                        </div>
+                        <p class="tarjeta-desc" style="margin-bottom:12px;">Box PvP &nbsp;·&nbsp; 2019 - 2020 &nbsp;·&nbsp; Servidor cerrado</p>
+                        <ul class="info-lista">
+                            <li><i class="fa-solid fa-eye"></i> Vigilé las salas de Box PvP para detectar hacks (killaura, reach) y jugadores tramposos.</li>
+                            <li><i class="fa-solid fa-ban"></i> Apliqué sanciones (mute, kick, ban) siguiendo el reglamento oficial del servidor.</li>
+                            <li><i class="fa-solid fa-comments"></i> Atendí tickets de soporte y dudas de la comunidad en el chat y en Discord.</li>
+                        </ul>
+                    </div>
+
+                    <!-- HELPER -->
+                    <div class="tarjeta">
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-solid fa-hands-holding-child"></i> EternaCraft Survival</h3>
+                            <span class="badge-destacado" style="color:var(--exito); border-color:var(--exito); background:rgba(16,185,129,0.1)">Helper</span>
+                        </div>
+                        <p class="tarjeta-desc" style="margin-bottom:12px;">Survival Normal &nbsp;·&nbsp; 2019 &nbsp;·&nbsp; Servidor cerrado</p>
+                        <ul class="info-lista">
+                            <li><i class="fa-solid fa-hands-helping"></i> Recibí y guié a los jugadores nuevos en el spawn, explicando reglas y comandos básicos.</li>
+                            <li><i class="fa-solid fa-flag"></i> Reporté a los moderadores casos de grief y mal comportamiento que no podía sancionar directamente.</li>
+                            <li><i class="fa-solid fa-comment-dots"></i> Respondí dudas frecuentes en el chat de ayuda y tickets de soporte básico.</li>
+                        </ul>
+                    </div>
+
+                    <!-- MODERADOR -->
+                    <div class="tarjeta">
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-solid fa-crosshairs"></i> ClutchZone PvP</h3>
+                            <span class="badge-destacado" style="color:var(--comunidad); border-color:var(--comunidad); background:rgba(168,85,247,0.1)">Moderador</span>
+                        </div>
+                        <p class="tarjeta-desc" style="margin-bottom:12px;">Box PvP &nbsp;·&nbsp; 2018 - 2019 &nbsp;·&nbsp; Servidor cerrado</p>
+                        <ul class="info-lista">
+                            <li><i class="fa-solid fa-people-arrows"></i> Moderé las salas competitivas 1v1 y 2v2, controlando el teaming y las trampas.</li>
+                            <li><i class="fa-solid fa-triangle-exclamation"></i> Gestioné apelaciones de baneos y revisé grabaciones para confirmar denuncias.</li>
+                            <li><i class="fa-solid fa-people-group"></i> Colaboré con el equipo de administración en pruebas de nuevos mapas y kits.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="desarrollo" class="categoria-contenido">
+                <div class="grid-tarjetas">
+                    <div class="tarjeta">
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-solid fa-window-maximize"></i> Dashboard Personal</h3>
+                            <span class="badge-destacado" style="color:#00ff88; border-color:#00ff88; background:rgba(0,255,136,0.1)">Web</span>
+                        </div>
+                        <p class="tarjeta-desc">Diseño front-end y programación de este portafolio interactivo utilizando HTML5 estructurado, CSS3 avanzado (con variables y animaciones nativas) y JavaScript para la lógica de navegación dinámica.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-solid fa-microchip"></i> Edición e IA</h3>
+                        </div>
+                        <p class="tarjeta-desc">Uso avanzado de herramientas de manipulación gráfica e inteligencia artificial para la edición fotorrealista de imágenes aplicadas tanto a entretenimiento como a la creación de assets.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="otros" class="categoria-contenido">
+                <div class="grid-tarjetas">
+                    <div class="tarjeta">
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-solid fa-palette"></i> Diseño 3D & Branding</h3>
+                        </div>
+                        <p class="tarjeta-desc">Desarrollo de identidad visual gamer: creación de miniaturas de alto impacto para YouTube, logotipos personalizados y renders 3D estructurados.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-solid fa-book-open"></i> Proyecto Narrativo Gráfico</h3>
+                            <span class="badge-destacado" style="color:#f1c40f; border-color:#f1c40f; background:rgba(241,196,15,0.1)">Creativo</span>
+                        </div>
+                        <p class="tarjeta-desc">Desarrollo en paralelo de un proyecto ilustrado independiente, investigando referencias antropológicas reales y detalles morfológicos para el diseño conceptual de la historia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="redes" class="pagina">
+            <h2 class="titulo-seccion"><i class="fa-solid fa-bullhorn"></i> Comunidad & <span>Redes</span></h2>
+
+            <div class="grid-tarjetas">
+                <div class="tarjeta tarjeta-red youtube">
+                    <div>
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-brands fa-youtube"></i> YouTube</h3>
+                        </div>
+                        <p class="tarjeta-desc">Subo gameplays competitivos, mejores momentos de los directos y guías de optimización técnica.</p>
+                    </div>
+                    <a href="https://www.youtube.com/@josneikermendoza4605" target="_blank" rel="noopener noreferrer" class="btn-red"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Canal</a>
+                </div>
+
+                <div class="tarjeta tarjeta-red discord">
+                    <div>
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-brands fa-discord"></i> Discord</h3>
+                        </div>
+                        <p class="tarjeta-desc">Comunidad oficial para interactuar en salas de voz, coordinar partidas y recibir soporte de proyectos.</p>
+                    </div>
+                    <button onclick="copiarDiscord('sradmin223', this)" class="btn-red"><i class="fa-solid fa-copy"></i> Copiar: sradmin223</button>
+                </div>
+
+                <div class="tarjeta tarjeta-red tiktok">
+                    <div>
+                        <div class="tarjeta-encabezado">
+                            <h3 class="tarjeta-titulo"><i class="fa-brands fa-tiktok"></i> TikTok</h3>
+                        </div>
+                        <p class="tarjeta-desc">Clips cortos de jugadas épicas, edits limpios y momentos divertidos sacados de los lives.</p>
+                    </div>
+                    <a href="https://www.tiktok.com/@cristian1212cris" target="_blank" rel="noopener noreferrer" class="btn-red"><i class="fa-solid fa-bolt"></i> Ver Clips</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        (function () {
+            "use strict";
+
+            /* ==================================================================
+               0. UTILIDADES Y DETECCIÓN DE CAPACIDADES
+               ================================================================== */
+            const body = document.body;
+            const esTactil = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+            const prefiereMovimientoReducido = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if (prefiereMovimientoReducido) {
+                body.classList.add('movimiento-reducido');
+            }
+            if (esTactil) {
+                body.classList.add('sin-cursor-custom');
+            }
+
+            /* ==================================================================
+               1. PRELOADER: MOMENTO DE ENTRADA ORQUESTADO
+               ================================================================== */
+            const preloader = document.getElementById('preloader');
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    preloader.classList.add('oculto');
+                }, 350);
+            });
+            // Salvaguarda: si "load" tarda demasiado, ocultar tras 2.5s de todas formas
+            setTimeout(() => preloader.classList.add('oculto'), 2500);
+
+            /* ==================================================================
+               2. SISTEMA DE CURSOR PERSONALIZADO (PUNTO + AURA CON INERCIA)
+               ================================================================== */
+            const cursorDot = document.getElementById('cursor-custom');
+            const cursorFollower = document.getElementById('cursor-follower');
+
+            if (!esTactil && !prefiereMovimientoReducido) {
+                let mouseX = window.innerWidth / 2;
+                let mouseY = window.innerHeight / 2;
+                let followerX = mouseX;
+                let followerY = mouseY;
+
+                document.addEventListener('mousemove', (e) => {
+                    mouseX = e.clientX;
+                    mouseY = e.clientY;
+                    cursorDot.style.left = mouseX + 'px';
+                    cursorDot.style.top = mouseY + 'px';
+                });
+
+                document.addEventListener('mousedown', () => body.classList.add('cursor-arrastre'));
+                document.addEventListener('mouseup', () => body.classList.remove('cursor-arrastre'));
+
+                document.addEventListener('mouseleave', () => body.classList.add('cursor-oculto'));
+                document.addEventListener('mouseenter', () => body.classList.remove('cursor-oculto'));
+
+                function animarFollower() {
+                    followerX += (mouseX - followerX) * 0.16;
+                    followerY += (mouseY - followerY) * 0.16;
+                    cursorFollower.style.left = followerX + 'px';
+                    cursorFollower.style.top = followerY + 'px';
+                    requestAnimationFrame(animarFollower);
+                }
+                requestAnimationFrame(animarFollower);
+
+                const elementosHover = 'a, button, .tarjeta, input, select, textarea, [role="button"]';
+                document.addEventListener('mouseover', (e) => {
+                    if (e.target.closest(elementosHover)) {
+                        body.classList.add('cursor-hover');
+                    }
+                });
+                document.addEventListener('mouseout', (e) => {
+                    if (e.target.closest(elementosHover) && !e.relatedTarget?.closest(elementosHover)) {
+                        body.classList.remove('cursor-hover');
+                    }
+                });
+            } else if (cursorDot && cursorFollower) {
+                cursorDot.style.display = 'none';
+                cursorFollower.style.display = 'none';
+            }
+
+            /* ==================================================================
+               3. NAVEGACIÓN PRINCIPAL (SIDEBAR)
+               ================================================================== */
+            const navBtns = document.querySelectorAll(".nav-btn");
+            const paginas = document.querySelectorAll(".pagina");
+
+            navBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    navBtns.forEach(b => b.classList.remove("activo"));
+                    btn.classList.add("activo");
+
+                    paginas.forEach(p => p.classList.remove("activa"));
+                    const targetPage = document.getElementById(btn.dataset.target);
+                    targetPage.classList.add("activa");
+
+                    revelarTarjetasVisibles(targetPage);
+                });
+            });
+
+            /* ==================================================================
+               4. SISTEMA DE FILTRADO INTERNO (SECCIÓN DE JUEGOS)
+               ================================================================== */
+            const filterBtns = document.querySelectorAll(".btn-filtro");
+            const cats = document.querySelectorAll(".categoria-contenido");
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove("activo"));
+                    btn.classList.add("activo");
+
+                    cats.forEach(c => c.classList.remove("activa"));
+                    const targetCat = document.getElementById(btn.dataset.filter);
+                    targetCat.classList.add("activa");
+
+                    revelarTarjetasVisibles(targetCat);
+                });
+            });
+
+            /* ==================================================================
+               5. REVELADO ESCALONADO DE TARJETAS (SCROLL + CAMBIO DE VISTA)
+               ================================================================== */
+            function revelarTarjetasVisibles(contenedor) {
+                const tarjetas = contenedor.querySelectorAll('.tarjeta:not(.revelada)');
+                tarjetas.forEach((tarjeta, i) => {
+                    setTimeout(() => tarjeta.classList.add('revelada'), i * 90);
+                });
+            }
+
+            // Revela las tarjetas visibles al cargar la página
+            revelarTarjetasVisibles(document.getElementById('personal'));
+
+            // IntersectionObserver como refuerzo para tarjetas que entran por scroll
+            const observador = new IntersectionObserver((entradas) => {
+                entradas.forEach(entrada => {
+                    if (entrada.isIntersecting) {
+                        entrada.target.classList.add('revelada');
+                        observador.unobserve(entrada.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            document.querySelectorAll('.tarjeta').forEach(t => observador.observe(t));
+
+            /* ==================================================================
+               6. EFECTO SPOTLIGHT + INCLINACIÓN 3D EN TARJETAS
+               ================================================================== */
+            if (!esTactil && !prefiereMovimientoReducido) {
+                document.querySelectorAll('.tarjeta').forEach(tarjeta => {
+                    const esRed = tarjeta.classList.contains('tarjeta-red');
+
+                    tarjeta.addEventListener('mousemove', (e) => {
+                        const rect = tarjeta.getBoundingClientRect();
+                        const x = ((e.clientX - rect.left) / rect.width) * 100;
+                        const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+                        tarjeta.style.setProperty('--mouse-x', x + '%');
+                        tarjeta.style.setProperty('--mouse-y', y + '%');
+
+                        if (!esRed) {
+                            const rotY = ((x - 50) / 50) * 6;
+                            const rotX = ((50 - y) / 50) * 6;
+                            tarjeta.style.transform = `translateY(-8px) scale(1.02) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
+                        }
+                    });
+
+                    tarjeta.addEventListener('mouseleave', () => {
+                        tarjeta.style.removeProperty('--mouse-x');
+                        tarjeta.style.removeProperty('--mouse-y');
+                        if (!esRed) {
+                            tarjeta.style.transform = '';
+                        }
+                    });
+                });
+            }
+
+            /* ==================================================================
+               7. COPIAR USUARIO DE DISCORD
+               ================================================================== */
+            window.copiarDiscord = function (texto, elemento) {
+                navigator.clipboard.writeText(texto).then(() => {
+                    const iconoOriginal = elemento.innerHTML;
+                    elemento.innerHTML = '<i class="fa-solid fa-check"></i> ¡Copiado!';
+                    elemento.style.background = '#3ba55c';
+                    elemento.style.color = '#fff';
+
+                    setTimeout(() => {
+                        elemento.innerHTML = iconoOriginal;
+                        elemento.style.background = '';
+                    }, 2000);
+                }).catch((err) => {
+                    console.error('Error al copiar: ', err);
+                    elemento.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Copia manual: ' + texto;
+                });
+            };
+
+            /* ==================================================================
+               8. PROTECCIONES DE INTERFAZ (CLIC DERECHO Y ATAJOS DE INSPECCIÓN)
+               ================================================================== */
+            document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+            document.addEventListener('keydown', (e) => {
+                if (e.keyCode === 123) { e.preventDefault(); return false; }
+                if (e.ctrlKey && e.shiftKey && e.keyCode === 73) { e.preventDefault(); return false; }
+                if (e.ctrlKey && e.shiftKey && e.keyCode === 67) { e.preventDefault(); return false; }
+                if (e.ctrlKey && e.shiftKey && e.keyCode === 74) { e.preventDefault(); return false; }
+                if (e.ctrlKey && e.keyCode === 85) { e.preventDefault(); return false; }
+            });
+
+            /* ==================================================================
+               9. ACTUALIZACIÓN DINÁMICA DE PREFERENCIA DE MOVIMIENTO
+               ================================================================== */
+            window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', (e) => {
+                body.classList.toggle('movimiento-reducido', e.matches);
+            });
+
+        })();
+    </script>
+</body>
+</html>
